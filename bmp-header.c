@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(int argc, char* argv[]) {
-	unsigned char bufferOriginal[54];//wil store the header of the original file
+	unsigned char bufferOriginal[54];//will store the header of the original file
 	
 	printf("num of cmd args: %d", argc);
 	for(int i = 0; i < argc; i++) {
@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
 	
 	printf("writing the header to the new file\n");
 	
-	fwrite(bufferOriginal, sizeof(bufferOriginal), sizeof(bufferOriginal), ptrNew);//writing first 54 bytes from the orignal file to new file
+	fwrite(bufferOriginal, sizeof(bufferOriginal), sizeof(bufferOriginal), ptrNew);//writing first 54 bytes from the original file to new file
 	printf("done.\n");
 return 0;	
 }
