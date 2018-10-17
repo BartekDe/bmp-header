@@ -1,13 +1,6 @@
 #include <stdio.h>
 int main(int argc, char* argv[]) {
 	unsigned char bufferOriginal[54];//will store the header of the original file
-	
-	printf("num of cmd args: %d", argc);
-	for(int i = 0; i < argc; i++) {
-		printf("%d arg: %s \n", i, argv[i]);
-	}
-
-
 
 	FILE *ptrOriginal = fopen(argv[1], "rb");//pointer to the original file
 	FILE *ptrNew = fopen(argv[2], "r+b");//pointer to the file that we overwrite
