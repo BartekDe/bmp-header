@@ -1,6 +1,6 @@
 # bmp-header
 
-Program used to replace headers of a bmp file after encrypting them, in order to view them as an image.
+Program used to replace headers of a bmp file after encrypting them, to view them as an image.
 
 # usage
 
